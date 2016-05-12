@@ -1,0 +1,20 @@
+//
+//  ZQHead.pch
+//  彩票01
+//
+//  Created by lx on 16/5/12.
+//  Copyright © 2016年 LiZhiqiang. All rights reserved.
+//
+
+
+#ifndef ZQHead_pch
+#define ZQHead_pch
+
+#import "UIViewExt.h"
+#endif 
+
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+#define kScreenBounds [UIScreen mainScreen].bounds
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZQMyLotteryViewController.h
 //  彩票01
 //
 //  Created by lx on 16/5/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZQMyLotteryViewController : UIViewController
 
 @end
-
