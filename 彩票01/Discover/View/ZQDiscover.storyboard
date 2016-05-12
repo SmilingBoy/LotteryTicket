@@ -283,21 +283,117 @@
             </objects>
             <point key="canvasLocation" x="976" y="-726"/>
         </scene>
-        <!--View Controller-->
+        <!--Luck View Controller-->
         <scene sceneID="YrR-gi-Cay">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="e57-BL-xUv" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="e57-BL-xUv" customClass="ZQLuckViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RNZ-AY-1Bo"/>
                         <viewControllerLayoutGuide type="bottom" id="n6N-Cj-tlX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="enG-BQ-d18">
+                    <view key="view" contentMode="scaleToFill" id="enG-BQ-d18" customClass="ZQLuckView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-ae-lW0">
+                                <rect key="frame" x="0.0" y="37" width="414" height="57"/>
+                            </imageView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgJ-Nf-ZdN">
+                                <rect key="frame" x="0.0" y="0.0" width="184" height="152"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="2lz-wd-yOH"/>
+                                    <constraint firstAttribute="width" constant="184" id="Got-Kd-Xbr"/>
+                                    <constraint firstAttribute="width" constant="200" id="rdR-1Z-8rO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2lz-wd-yOH"/>
+                                        <exclude reference="rdR-1Z-8rO"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8N-vR-BVN">
+                                <rect key="frame" x="0.0" y="292" width="184" height="152"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Qx-CZ-hwl">
+                                <rect key="frame" x="0.0" y="584" width="184" height="152"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3X-15-SpW">
+                                <rect key="frame" x="0.0" y="152" width="184" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="8on-6S-Fu7"/>
+                                    <constraint firstAttribute="width" constant="184" id="W3R-Ix-mL2"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_birthday_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myB-1z-SxN">
+                                <rect key="frame" x="231" y="152" width="153" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="TOQ-dk-JXb"/>
+                                    <constraint firstAttribute="width" constant="153" id="ouC-wm-nOp"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_lots_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLg-fj-gvN">
+                                <rect key="frame" x="0.0" y="444" width="184" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="Boc-Ho-erc"/>
+                                    <constraint firstAttribute="height" constant="139" id="Jfx-Y9-jCm"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_number_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONP-G6-zI5">
+                                <rect key="frame" x="224" y="444" width="153" height="152"/>
+                                <state key="normal" image="luck_entry_roulette_button_normal"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ONP-G6-zI5" firstAttribute="width" secondItem="myB-1z-SxN" secondAttribute="width" id="0AS-uY-6Se"/>
+                            <constraint firstItem="p8N-vR-BVN" firstAttribute="height" secondItem="AgJ-Nf-ZdN" secondAttribute="height" id="1Cr-lp-3dW"/>
+                            <constraint firstItem="p8N-vR-BVN" firstAttribute="width" secondItem="AgJ-Nf-ZdN" secondAttribute="width" id="2B9-nQ-fGr"/>
+                            <constraint firstItem="DLg-fj-gvN" firstAttribute="leading" secondItem="enG-BQ-d18" secondAttribute="leading" id="7kC-AZ-DiQ"/>
+                            <constraint firstItem="ONP-G6-zI5" firstAttribute="top" secondItem="DLg-fj-gvN" secondAttribute="top" id="8lw-DV-fIC"/>
+                            <constraint firstItem="p8N-vR-BVN" firstAttribute="top" secondItem="AgJ-Nf-ZdN" secondAttribute="bottom" constant="122" id="9Pu-c9-xfQ"/>
+                            <constraint firstItem="v3X-15-SpW" firstAttribute="top" secondItem="AgJ-Nf-ZdN" secondAttribute="bottom" id="FVI-59-5CS"/>
+                            <constraint firstItem="2Qx-CZ-hwl" firstAttribute="width" secondItem="p8N-vR-BVN" secondAttribute="width" id="GqM-vw-w7Z"/>
+                            <constraint firstItem="n6N-Cj-tlX" firstAttribute="top" secondItem="2Qx-CZ-hwl" secondAttribute="bottom" id="HvV-WI-201"/>
+                            <constraint firstItem="2Qx-CZ-hwl" firstAttribute="leading" secondItem="enG-BQ-d18" secondAttribute="leading" id="IJI-wE-wZr"/>
+                            <constraint firstItem="2Qx-CZ-hwl" firstAttribute="top" secondItem="p8N-vR-BVN" secondAttribute="bottom" constant="140" id="LwH-5X-4vx"/>
+                            <constraint firstItem="p8N-vR-BVN" firstAttribute="width" secondItem="AgJ-Nf-ZdN" secondAttribute="width" id="NXd-b3-y43"/>
+                            <constraint firstAttribute="trailing" secondItem="myB-1z-SxN" secondAttribute="trailing" constant="30" id="Nn2-By-BLZ"/>
+                            <constraint firstItem="p8N-vR-BVN" firstAttribute="leading" secondItem="enG-BQ-d18" secondAttribute="leading" id="Yuz-BI-huM"/>
+                            <constraint firstItem="p8N-vR-BVN" firstAttribute="height" secondItem="AgJ-Nf-ZdN" secondAttribute="height" id="akq-Qj-OAm"/>
+                            <constraint firstItem="AgJ-Nf-ZdN" firstAttribute="top" secondItem="enG-BQ-d18" secondAttribute="top" id="blL-9c-cWZ"/>
+                            <constraint firstItem="v3X-15-SpW" firstAttribute="leading" secondItem="enG-BQ-d18" secondAttribute="leading" id="cTL-Qb-sJt"/>
+                            <constraint firstItem="DLg-fj-gvN" firstAttribute="top" secondItem="p8N-vR-BVN" secondAttribute="bottom" id="cws-8j-T1e"/>
+                            <constraint firstItem="2Qx-CZ-hwl" firstAttribute="height" secondItem="p8N-vR-BVN" secondAttribute="height" id="hkm-jQ-sQX"/>
+                            <constraint firstAttribute="trailing" secondItem="ONP-G6-zI5" secondAttribute="trailing" constant="37" id="jht-Ti-1sC"/>
+                            <constraint firstItem="ONP-G6-zI5" firstAttribute="height" secondItem="myB-1z-SxN" secondAttribute="height" id="kJy-4a-5iN"/>
+                            <constraint firstItem="p8N-vR-BVN" firstAttribute="top" secondItem="AgJ-Nf-ZdN" secondAttribute="bottom" constant="140" id="mQH-zM-fWv"/>
+                            <constraint firstItem="myB-1z-SxN" firstAttribute="top" secondItem="v3X-15-SpW" secondAttribute="top" id="oOr-XF-6jp"/>
+                            <constraint firstItem="p8N-vR-BVN" firstAttribute="leading" secondItem="enG-BQ-d18" secondAttribute="leading" id="qAp-TH-rkQ"/>
+                            <constraint firstItem="2Qx-CZ-hwl" firstAttribute="top" secondItem="p8N-vR-BVN" secondAttribute="bottom" constant="140" id="wWk-kj-BrV"/>
+                            <constraint firstItem="AgJ-Nf-ZdN" firstAttribute="leading" secondItem="enG-BQ-d18" secondAttribute="leading" id="yZx-bK-WJm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2B9-nQ-fGr"/>
+                                <exclude reference="9Pu-c9-xfQ"/>
+                                <exclude reference="akq-Qj-OAm"/>
+                                <exclude reference="qAp-TH-rkQ"/>
+                                <exclude reference="LwH-5X-4vx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="aMY-xG-V8P"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="lightImageView" destination="Yba-ae-lW0" id="b4t-5I-EEp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVK-qz-1K7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,5 +409,10 @@
         <image name="discovery_luckyBet_title" width="96" height="23"/>
         <image name="discovery_news_icon" width="115" height="79"/>
         <image name="discovery_news_title" width="55" height="23"/>
+        <image name="luck_entry_birthday_button_normal" width="137" height="140"/>
+        <image name="luck_entry_lots_button_normal" width="153" height="152"/>
+        <image name="luck_entry_number_button_normal" width="130" height="139"/>
+        <image name="luck_entry_roulette_button_normal" width="140" height="144"/>
+        <image name="lucky_entry_light0" width="231" height="29"/>
     </resources>
 </document>

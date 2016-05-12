@@ -11,6 +11,8 @@
 		E9532EF31CE40EA7005BB3C6 /* ZQDiscover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9532EF21CE40EA7005BB3C6 /* ZQDiscover.storyboard */; };
 		E9532EF91CE41463005BB3C6 /* ZQGroupBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9532EF81CE41463005BB3C6 /* ZQGroupBuyViewController.m */; };
 		E9532EFC1CE414AE005BB3C6 /* ZQDiscoverTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9532EFB1CE414AE005BB3C6 /* ZQDiscoverTitleButton.m */; };
+		E9532EFF1CE4286A005BB3C6 /* ZQLuckView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9532EFE1CE4286A005BB3C6 /* ZQLuckView.m */; };
+		E9532F021CE42B36005BB3C6 /* ZQLuckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9532F011CE42B36005BB3C6 /* ZQLuckViewController.m */; };
 		E9698A5E1CE2DAE600B2D748 /* ZQMenubutton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9698A5D1CE2DAE600B2D748 /* ZQMenubutton.m */; };
 		E98759001CE2C4000060116E /* ZQActivityMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E98758FF1CE2C4000060116E /* ZQActivityMenu.m */; };
 		E98759071CE2CB3C0060116E /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E98759061CE2CB3C0060116E /* UIViewExt.m */; };
@@ -58,6 +60,10 @@
 		E9532EF81CE41463005BB3C6 /* ZQGroupBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQGroupBuyViewController.m; sourceTree = "<group>"; };
 		E9532EFA1CE414AE005BB3C6 /* ZQDiscoverTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDiscoverTitleButton.h; sourceTree = "<group>"; };
 		E9532EFB1CE414AE005BB3C6 /* ZQDiscoverTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDiscoverTitleButton.m; sourceTree = "<group>"; };
+		E9532EFD1CE4286A005BB3C6 /* ZQLuckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQLuckView.h; sourceTree = "<group>"; };
+		E9532EFE1CE4286A005BB3C6 /* ZQLuckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQLuckView.m; sourceTree = "<group>"; };
+		E9532F001CE42B36005BB3C6 /* ZQLuckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQLuckViewController.h; sourceTree = "<group>"; };
+		E9532F011CE42B36005BB3C6 /* ZQLuckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQLuckViewController.m; sourceTree = "<group>"; };
 		E9698A5C1CE2DAE600B2D748 /* ZQMenubutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQMenubutton.h; sourceTree = "<group>"; };
 		E9698A5D1CE2DAE600B2D748 /* ZQMenubutton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQMenubutton.m; sourceTree = "<group>"; };
 		E98758FE1CE2C4000060116E /* ZQActivityMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQActivityMenu.h; sourceTree = "<group>"; };
@@ -245,6 +251,8 @@
 				E9973C521CE15ABD004ED517 /* ZQDiscoverViewController.m */,
 				E9532EF71CE41463005BB3C6 /* ZQGroupBuyViewController.h */,
 				E9532EF81CE41463005BB3C6 /* ZQGroupBuyViewController.m */,
+				E9532F001CE42B36005BB3C6 /* ZQLuckViewController.h */,
+				E9532F011CE42B36005BB3C6 /* ZQLuckViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 				E9532EF21CE40EA7005BB3C6 /* ZQDiscover.storyboard */,
 				E9532EFA1CE414AE005BB3C6 /* ZQDiscoverTitleButton.h */,
 				E9532EFB1CE414AE005BB3C6 /* ZQDiscoverTitleButton.m */,
+				E9532EFD1CE4286A005BB3C6 /* ZQLuckView.h */,
+				E9532EFE1CE4286A005BB3C6 /* ZQLuckView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -590,6 +600,7 @@
 				E9532EFC1CE414AE005BB3C6 /* ZQDiscoverTitleButton.m in Sources */,
 				E98759001CE2C4000060116E /* ZQActivityMenu.m in Sources */,
 				E9532EF91CE41463005BB3C6 /* ZQGroupBuyViewController.m in Sources */,
+				E9532F021CE42B36005BB3C6 /* ZQLuckViewController.m in Sources */,
 				E987590A1CE2CF390060116E /* ZQCoverView.m in Sources */,
 				E9973C5C1CE15AF2004ED517 /* ZQHistoryViewController.m in Sources */,
 				E98759071CE2CB3C0060116E /* UIViewExt.m in Sources */,
@@ -601,6 +612,7 @@
 				E9973C531CE15ABD004ED517 /* ZQDiscoverViewController.m in Sources */,
 				E9973C501CE15AA2004ED517 /* main.m in Sources */,
 				E9973C4F1CE15AA2004ED517 /* AppDelegate.m in Sources */,
+				E9532EFF1CE4286A005BB3C6 /* ZQLuckView.m in Sources */,
 				E92B38E11CE1F12F00956543 /* ZQTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
