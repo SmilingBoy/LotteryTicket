@@ -9,7 +9,7 @@
 #import "ZQMyLotteryViewController.h"
 
 @interface ZQMyLotteryViewController ()
-
+@property (weak, nonatomic) IBOutlet UIButton *loadButton;
 @end
 
 @implementation ZQMyLotteryViewController
@@ -19,6 +19,10 @@
     
     [self addLeftBarButton];
     [self addRightBarButton];
+    
+    UIImage *loadButtonImage = _loadButton.currentBackgroundImage;
+    loadButtonImage = [loadButtonImage stretchableImageWithLeftCapWidth:0.5 * loadButtonImage.size.width topCapHeight:0.5 * loadButtonImage.size.height];
+    [_loadButton setBackgroundImage:loadButtonImage forState:UIControlStateNormal];
     
 }
 

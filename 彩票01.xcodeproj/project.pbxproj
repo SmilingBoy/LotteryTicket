@@ -32,6 +32,9 @@
 		E9DA15611CE31BD3007DFA8B /* ZQDowmMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA15601CE31BD3007DFA8B /* ZQDowmMenu.m */; };
 		E9DA15A61CE359B9007DFA8B /* ZQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA15A51CE359B9007DFA8B /* ZQNavigationController.m */; };
 		E9F5F7CC1CE454F400FC6346 /* ZQMyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5F7CB1CE454F400FC6346 /* ZQMyLotteryViewController.m */; };
+		E9F5F7D61CE45B2000FC6346 /* ZQMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F5F7D51CE45B2000FC6346 /* ZQMyLotteryViewController.xib */; };
+		E9F5F7DD1CE466A300FC6346 /* ZQNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5F7DC1CE466A300FC6346 /* ZQNewFeatureViewController.m */; };
+		E9F5F7E01CE4713400FC6346 /* ZQCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5F7DF1CE4713400FC6346 /* ZQCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,11 @@
 		E9DA15A51CE359B9007DFA8B /* ZQNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQNavigationController.m; sourceTree = "<group>"; };
 		E9F5F7CA1CE454F400FC6346 /* ZQMyLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQMyLotteryViewController.h; sourceTree = "<group>"; };
 		E9F5F7CB1CE454F400FC6346 /* ZQMyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQMyLotteryViewController.m; sourceTree = "<group>"; };
+		E9F5F7D51CE45B2000FC6346 /* ZQMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZQMyLotteryViewController.xib; sourceTree = "<group>"; };
+		E9F5F7DB1CE466A300FC6346 /* ZQNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQNewFeatureViewController.h; sourceTree = "<group>"; };
+		E9F5F7DC1CE466A300FC6346 /* ZQNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQNewFeatureViewController.m; sourceTree = "<group>"; };
+		E9F5F7DE1CE4713400FC6346 /* ZQCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQCollectionViewCell.h; sourceTree = "<group>"; };
+		E9F5F7DF1CE4713400FC6346 /* ZQCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				E9973C4B1CE15AA2004ED517 /* Other */,
+				E9F5F7D71CE4668B00FC6346 /* NewFeature */,
 				E9973BF81CE15845004ED517 /* Arena */,
 				E9973BFC1CE15845004ED517 /* Discover */,
 				E9973C041CE15845004ED517 /* Hall */,
@@ -433,6 +442,7 @@
 			children = (
 				E9F5F7CA1CE454F400FC6346 /* ZQMyLotteryViewController.h */,
 				E9F5F7CB1CE454F400FC6346 /* ZQMyLotteryViewController.m */,
+				E9F5F7D51CE45B2000FC6346 /* ZQMyLotteryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -461,6 +471,41 @@
 				E9532EEF1CE3FE93005BB3C6 /* ZQHead.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		E9F5F7D71CE4668B00FC6346 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				E9F5F7D81CE4668B00FC6346 /* Controller */,
+				E9F5F7D91CE4668B00FC6346 /* Model */,
+				E9F5F7DA1CE4668B00FC6346 /* View */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		E9F5F7D81CE4668B00FC6346 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9F5F7DB1CE466A300FC6346 /* ZQNewFeatureViewController.h */,
+				E9F5F7DC1CE466A300FC6346 /* ZQNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9F5F7D91CE4668B00FC6346 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9F5F7DA1CE4668B00FC6346 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9F5F7DE1CE4713400FC6346 /* ZQCollectionViewCell.h */,
+				E9F5F7DF1CE4713400FC6346 /* ZQCollectionViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,6 +615,7 @@
 				E9973BD51CE153E6004ED517 /* LaunchScreen.storyboard in Resources */,
 				E9532EF31CE40EA7005BB3C6 /* ZQDiscover.storyboard in Resources */,
 				E9973BD21CE153E6004ED517 /* Assets.xcassets in Resources */,
+				E9F5F7D61CE45B2000FC6346 /* ZQMyLotteryViewController.xib in Resources */,
 				E9973C351CE158EB004ED517 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,9 +644,11 @@
 				E9698A5E1CE2DAE600B2D748 /* ZQMenubutton.m in Sources */,
 				E9DA15A61CE359B9007DFA8B /* ZQNavigationController.m in Sources */,
 				E9532EFC1CE414AE005BB3C6 /* ZQDiscoverTitleButton.m in Sources */,
+				E9F5F7DD1CE466A300FC6346 /* ZQNewFeatureViewController.m in Sources */,
 				E98759001CE2C4000060116E /* ZQActivityMenu.m in Sources */,
 				E9532EF91CE41463005BB3C6 /* ZQGroupBuyViewController.m in Sources */,
 				E9532F021CE42B36005BB3C6 /* ZQLuckViewController.m in Sources */,
+				E9F5F7E01CE4713400FC6346 /* ZQCollectionViewCell.m in Sources */,
 				E987590A1CE2CF390060116E /* ZQCoverView.m in Sources */,
 				E9F5F7CC1CE454F400FC6346 /* ZQMyLotteryViewController.m in Sources */,
 				E9973C5C1CE15AF2004ED517 /* ZQHistoryViewController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZQTabBarController.h"
+#import "ZQNewFeatureViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,25 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    ZQTabBarController *tabBar = [[ZQTabBarController alloc]init];
-    self.window.rootViewController = tabBar;
+    /*
+    //获取上一次的版本号
+    NSString *oldVersion = [[NSUserDefaults standardUserDefaults] objectForKey:@"version"];
+    NSLog(@"%@",oldVersion);
+    
+    //当前版本号
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+    NSLog(@"%@",currentVersion);
+    */
+    
+    UIViewController *rootVC = nil;
+    
+    rootVC = [[ZQNewFeatureViewController alloc]init];
+    
+    
+    
+//    ZQTabBarController *rootVC = [[ZQTabBarController alloc]init];
+    self.window.rootViewController = rootVC;
+
     
     return YES;
 }
