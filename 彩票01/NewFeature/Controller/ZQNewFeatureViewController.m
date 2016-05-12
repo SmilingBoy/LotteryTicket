@@ -100,6 +100,8 @@
     
     cell.image = [UIImage imageNamed:imageName];
     
+    [cell setUpIndexpage:indexPath withCount:4];
+    
     return cell;
     
 }

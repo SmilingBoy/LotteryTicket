@@ -35,6 +35,8 @@
 		E9F5F7D61CE45B2000FC6346 /* ZQMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F5F7D51CE45B2000FC6346 /* ZQMyLotteryViewController.xib */; };
 		E9F5F7DD1CE466A300FC6346 /* ZQNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5F7DC1CE466A300FC6346 /* ZQNewFeatureViewController.m */; };
 		E9F5F7E01CE4713400FC6346 /* ZQCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5F7DF1CE4713400FC6346 /* ZQCollectionViewCell.m */; };
+		E9F5F7EA1CE4A77A00FC6346 /* ZQSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5F7E91CE4A77A00FC6346 /* ZQSaveTool.m */; };
+		E9F5F7F11CE4A83F00FC6346 /* ZQGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5F7F01CE4A83F00FC6346 /* ZQGuideTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,10 @@
 		E9F5F7DC1CE466A300FC6346 /* ZQNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQNewFeatureViewController.m; sourceTree = "<group>"; };
 		E9F5F7DE1CE4713400FC6346 /* ZQCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQCollectionViewCell.h; sourceTree = "<group>"; };
 		E9F5F7DF1CE4713400FC6346 /* ZQCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQCollectionViewCell.m; sourceTree = "<group>"; };
+		E9F5F7E81CE4A77A00FC6346 /* ZQSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZQSaveTool.h; path = Save/ZQSaveTool.h; sourceTree = "<group>"; };
+		E9F5F7E91CE4A77A00FC6346 /* ZQSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZQSaveTool.m; path = Save/ZQSaveTool.m; sourceTree = "<group>"; };
+		E9F5F7EF1CE4A83F00FC6346 /* ZQGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQGuideTool.h; sourceTree = "<group>"; };
+		E9F5F7F01CE4A83F00FC6346 /* ZQGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQGuideTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,7 @@
 		E9973BC41CE153E6004ED517 /* 彩票01 */ = {
 			isa = PBXGroup;
 			children = (
+				E9F5F7E31CE4A70500FC6346 /* Tool */,
 				E9973C4B1CE15AA2004ED517 /* Other */,
 				E9F5F7D71CE4668B00FC6346 /* NewFeature */,
 				E9973BF81CE15845004ED517 /* Arena */,
@@ -508,6 +515,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E9F5F7E31CE4A70500FC6346 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E9F5F7EE1CE4A83F00FC6346 /* Guide */,
+				E9F5F7E41CE4A71800FC6346 /* Save */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E9F5F7E41CE4A71800FC6346 /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				E9F5F7E81CE4A77A00FC6346 /* ZQSaveTool.h */,
+				E9F5F7E91CE4A77A00FC6346 /* ZQSaveTool.m */,
+			);
+			name = Save;
+			sourceTree = "<group>";
+		};
+		E9F5F7EE1CE4A83F00FC6346 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				E9F5F7EF1CE4A83F00FC6346 /* ZQGuideTool.h */,
+				E9F5F7F01CE4A83F00FC6346 /* ZQGuideTool.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -647,6 +681,7 @@
 				E9F5F7DD1CE466A300FC6346 /* ZQNewFeatureViewController.m in Sources */,
 				E98759001CE2C4000060116E /* ZQActivityMenu.m in Sources */,
 				E9532EF91CE41463005BB3C6 /* ZQGroupBuyViewController.m in Sources */,
+				E9F5F7F11CE4A83F00FC6346 /* ZQGuideTool.m in Sources */,
 				E9532F021CE42B36005BB3C6 /* ZQLuckViewController.m in Sources */,
 				E9F5F7E01CE4713400FC6346 /* ZQCollectionViewCell.m in Sources */,
 				E987590A1CE2CF390060116E /* ZQCoverView.m in Sources */,
@@ -656,6 +691,7 @@
 				E9973C381CE15918004ED517 /* ZQTabBarController.m in Sources */,
 				E9973C3B1CE15977004ED517 /* ZQArenaViewController.m in Sources */,
 				E9DA15611CE31BD3007DFA8B /* ZQDowmMenu.m in Sources */,
+				E9F5F7EA1CE4A77A00FC6346 /* ZQSaveTool.m in Sources */,
 				E9973C561CE15ACB004ED517 /* ZQHallViewController.m in Sources */,
 				E9973C531CE15ABD004ED517 /* ZQDiscoverViewController.m in Sources */,
 				E9973C501CE15AA2004ED517 /* main.m in Sources */,
